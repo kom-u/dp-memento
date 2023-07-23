@@ -1,16 +1,18 @@
 #pragma once
 
-#include <iostream>
+#include <string>
 
+template <typename T>
 class Memento
 {
-private:
-    // Keadaan internal yang disimpan
-    std::string state;
-
 public:
-    Memento();
-    Memento(const std::string &_state);
+    explicit Memento(const T &state) : state_(state) {}
 
-    std::string GetState() const;
+    T GetState() const
+    {
+        return state_;
+    }
+
+private:
+    T state_;
 };

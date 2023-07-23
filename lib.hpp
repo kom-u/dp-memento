@@ -1,3 +1,4 @@
-#include "Caretaker/Caretaker.hpp"
+#include <iostream>
+
 #include "Memento/Memento.hpp"
-#include "Originator/Originator.hpp"
+#include "Document/Document.hpp"
